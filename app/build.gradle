@@ -10,7 +10,6 @@ apply from: '../dependencies.gradle'
 
 android {
     compileSdkVersion project.ext.compileSdkVersion
-    buildToolsVersion project.ext.buildToolsVersion
 
     defaultConfig {
         minSdkVersion project.ext.minSdkVersion
@@ -45,5 +44,5 @@ dependencies {
     api project(":core")
     api project(":dummy_service")
 
-    kapt 'com.google.dagger:dagger-compiler:2.29.1'
+    kapt 'com.google.dagger:dagger-compiler:2.38'
 }

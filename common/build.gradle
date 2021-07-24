@@ -8,7 +8,6 @@ apply from: '../config.gradle'
 
 android {
     compileSdkVersion project.ext.compileSdkVersion
-    buildToolsVersion project.ext.buildToolsVersion
 
     defaultConfig {
         minSdkVersion project.ext.minSdkVersion
@@ -26,8 +25,4 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
-}
-
-dependencies {
-    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
 }
