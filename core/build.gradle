@@ -37,5 +37,5 @@ dependencies {
     kapt 'com.google.dagger:dagger-compiler:2.38'
 
     testImplementation 'junit:junit:4.13.2'
-    testImplementation(testFixtures(project(":database")))
+    testImplementation testFixtures(project(":database"))
 }
