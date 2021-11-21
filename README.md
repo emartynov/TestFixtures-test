@@ -1,4 +1,10 @@
 
-### Android Dagger Dynamic Multimodule
+# Test the test fixtures
 
-This repository belongs to [article that describes](https://blog.thefuntasty.com/dagger-2-in-android-dynamic-multimodule-project-c90954630615) how to set up Dagger in Dynamic-Feature multimodule project.
+## Where to look
+
+`database` module exposes the test fixtures and `core` is consiming it.
+
+## Credits
+
+Creadits to @skywall for his [multimodule project](https://github.com/skywall/android-dagger-multimodule) that I used as the start for testing the test fixtures feature.
