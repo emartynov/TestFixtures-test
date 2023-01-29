@@ -1,7 +1,6 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
-    id 'kotlin-android-extensions'
     id 'kotlin-kapt'
 }
 
@@ -35,6 +34,10 @@ android {
         pickFirst 'META-INF/atomicfu.kotlin_module'
         pickFirst 'META-INF/kotlinx-coroutines-io.kotlin_module'
         pickFirst 'kotlin/reflect/reflect.kotlin_builtins'
+    }
+
+    buildFeatures {
+        viewBinding = true
     }
 
     dynamicFeatures = [":home"]
