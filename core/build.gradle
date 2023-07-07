@@ -22,11 +22,11 @@ android {
     }
 
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility = "11"
+        targetCompatibility = "11"
     }
     kotlinOptions {
-        jvmTarget = '1.8'
+        jvmTarget = "11"
     }
     buildFeatures {
         viewBinding = true
@@ -38,7 +38,7 @@ dependencies {
     api project(":network")
     api project(":common")
 
-    kapt 'com.google.dagger:dagger-compiler:2.38'
+    kapt 'com.google.dagger:dagger-compiler:2.46.1'
 
     testImplementation 'junit:junit:4.13.2'
     testImplementation testFixtures(project(":database"))
