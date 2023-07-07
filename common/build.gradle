@@ -9,6 +9,8 @@ android {
     compileSdkVersion project.ext.compileSdkVersion
 
     defaultConfig {
+        namespace 'cz.skywall.multimoduleexample.common'
+
         minSdkVersion project.ext.minSdkVersion
         targetSdkVersion project.ext.targetSdkVersion
         versionCode project.ext.versionCode
