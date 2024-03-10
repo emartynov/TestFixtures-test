@@ -14,9 +14,6 @@ android {
         namespace 'cz.skywall.multimoduleexample.home'
 
         minSdkVersion project.ext.minSdkVersion
-        targetSdkVersion project.ext.targetSdkVersion
-        versionCode project.ext.versionCode
-        versionName project.ext.versionName
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
